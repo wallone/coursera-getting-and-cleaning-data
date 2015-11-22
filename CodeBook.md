@@ -16,6 +16,17 @@ train/X_train.txt - Contains 7352 observations of the 561 features, for 21 of th
 The X_test and X_train data set, will only filter columns that have mean or std in the column name
 the test and train data will be merged together.
 The activity label numbers provided by y_test and y_train will be replaced by the activity name is provided by the activity_labels.txt file.
+
+The execution of this process is as follows:
+
+1) Download and unzip file(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) to working directory 
+2) Load the reshape2 package to allow the use of the melt function in step 5 
+3) Merges the training and the test sets to create one data set. 
+4) Extracts only the measurements on the mean and standard deviation for each measurement. 
+5)Uses descriptive activity names to name the activities in the data set 
+6)Appropriately labels the data set with descriptive variable names. 
+7) From the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+8) Create resulting file as a txt file created with write.table() using row.name=FALSE.
 Cleaned up column names is provided by data by features.txt file.
 
-The execution of this process is as follows.
+
