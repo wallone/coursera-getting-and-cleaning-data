@@ -43,4 +43,4 @@ activities <- activityNames[yMerged]
 #of each variable for each activity and each subject.
 melted <- melt(combined, id=c("subjectID","activity"))
 tidy <- dcast(melted, subjectID+activities ~ variable, mean)
-write.table(tidy, "tidy.csv", row.names = FALSE)
+write.table(tidy, "tidy.txt", row.names = FALSE)
